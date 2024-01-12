@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+
+
+:root {
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #efbb6e;
+    --cor-terciaria: #9f7c49;
+    --cor-hover: #272727;
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --fonte-terciaria: 'Playfair',
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.cabecalho_menu_link {
+    font-family: var(--fonte-primaria);
+    font-size: 1.2rem;
+    color: var(--cor-terciaria);
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+.titulo_destaque {
+    text-align: center;
+    font-size: 3rem;
+    padding: 1.25rem;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+    text-shadow: 0.1875rem 0.0625rem 0.0625rem black;
+}
+
+.apresentacao__conteudo {
+    font-size: 1.4rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    text-align: justify;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    text-shadow: 0.11rem 0.0625rem 0.0625rem black;
+}
+
+.formulario-contato {
+    text-shadow: 0.125rem 0.0625rem 0.0625rem black;
+    font-family: var(--fonte-secundaria);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.625rem;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.texto_formulario {
+    color: var(--cor-secundaria);
+    font-size: 1.4rem;
+}
+
+.titulo_formulario {
+    text-shadow: 0.15625rem 0.0625rem 0.0625rem black;
+    color: var(--cor-secundaria);
+    margin-left: 4.6875rem;
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+}
+
+input {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    padding: 0.375rem;
+}
+
+.dados-formulario {
+    width: 30%;
+}
+
+.background,
+.backgroundm,
+.backindex {
+    background: url(../assets/WalpapperPele.jpg) no-repeat left top;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.rodape {
+    font-family: var(--fonte-secundaria);
+    color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    background-size: cover;
+    background-position: center;
+    padding: 0.625rem;
+    justify-content: space-between;
+}
+
+.logos {
+    padding-top: 1.875rem;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.logofema,
+.logobetano {
+    max-height: 5rem;
+}
+
+.gridtoplayers {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.625rem;
+    margin-top: 2.5rem;
+}
+
+.gridtoplayers label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-name {
+    font-family: var(--fonte-terciaria);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #efbb6e;
+    text-align: center;
+    text-shadow: 0.1rem 0.0625rem 0.0625rem black;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.gridtoplayers img {
+
+    margin-left: 5rem;
+    margin-right: 5rem;
+    max-width: 85%;
+    height: auto;
+    border: 0.125rem solid black;
+    border-radius: 0.5rem;
+    padding: 0.3125rem;
+    background: linear-gradient(to right, #efbb6e, black);
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gridtoplayers img:hover {
+    transform: scale(1.1);
+}
+
+.gridtoplayers input[type="checkbox"] {
+    margin-top: 1.875rem;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.gridtopgoals input[type="checkbox"] {
+    margin-top: 1rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: 0.3125rem;
+}
+
+.buttonBestPlayers {
+    margin: auto;
+    display: block;
+    padding: 1.2rem 2rem;
+    font-size: 1rem;
+    background: linear-gradient(to right, #ff8c00, #e74c3c);
+    color: #fff;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border: 0.1rem solid black;
+}
+
+.buttonBestPlayers:hover {
+    background: linear-gradient(to right, #e74c3c, #ff8c00);
+}
+
+.cabecalho__menu a {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    transition: color 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.cabecalho__menu a:hover {
+    color: #e74c3c;
+    transform: scale(1.1);
+}
+
+.gridtopgoals {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-top: 2.5rem;
+    margin-left: 1.875rem;
+}
+
+
+
+.indexb {
+    background: linear-gradient(to right, #e74c3c, #ff8c00);
+    color: white;
+    font-size: 1.25rem;
+}
+
+.gridtopgoals video {
+    border: 0.50 solid black;
+    border-radius: 0.5rem;
+    padding: 0.1rem;
+    background: linear-gradient(to right, #efbb6e, black);
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+@media (max-width: 75rem) {
+    * {
+        box-sizing: border-box;
+    }
+
+    .cabecalho_menu_link {
+        font-size: 0.9rem;
+        margin-left: 0.9375rem;
+        margin-top: 0.625rem;
+    }
+
+    .titulo_destaque {
+        font-size: 2rem;
+        padding: 0.625rem;
+    }
+
+    .apresentacao__conteudo {
+        margin: 0.9375rem;
+        margin-bottom: 2rem;
+        text-align: justify;
+    }
+
+    .formulario-contato {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        margin-left: 5%;
+    }
+
+    .texto_formulario {
+        font-size: 1rem;
+    }
+
+    .titulo_formulario {
+        margin-left: 0.9375rem;
+        font-size: 1.2rem;
+    }
+
+    input {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    .dados-formulario {
+        width: 100%;
+        max-width: 25rem;
+        margin: 0 auto;
+    }
+
+    .background,
+    .backgroundm,
+    .backindex {
+        height: 100%;
+        background-size: cover;
+    }
+
+    .rodape {
+        padding-top: 5rem;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .logos {
+        margin-left: 0.9375rem;
+        gap: 1.25rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logofema,
+    .logobetano {
+        width: 100%;
+        height: auto;
+        border-radius: 15%;
+    }
+
+    .gridtoplayers {
+        grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+        gap: 1.25rem;
+        margin-top: 3rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .gridtoplayers img {
+        padding: 0.3125rem;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    .buttonBestPlayers {
+        padding: 0.9375rem 1.875rem;
+        font-size: 1rem;
+    }
+
+    .cabecalho__menu a {
+        font-size: 1rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .player-name {
+        font-size: 1.5rem;
+        margin-bottom: 0.625rem;
+    }
+
+    .gridtopgoals {
+        grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+        gap: 1.25rem;
+        margin-top: 1.25rem;
+        margin-left: 0.9375rem;
+    }
+
+    .gridtopgoals input[type="checkbox"] {
+        margin-top: 0.9375rem;
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-left: 0;
+    }
+
+    .indexb {
+        background: linear-gradient(to right, #e74c3c, #ff8c00);
+        color: white;
+        offset-distance: auto;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .indexb {
+        margin-top: 0.625rem;
+    }
+}

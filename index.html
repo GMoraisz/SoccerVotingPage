@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Historic Football Award</title>
+</head>
+
+<body class="backindex">
+
+    <header class="cabecalho">
+        <Br>
+        <nav class="cabecalho__menu">
+            <a class="cabecalho_menu_link" href="index.html" title="Página Inicial">Apresentação</a>
+            <a class="cabecalho_menu_link" href="bestgoalsm.html"
+                title="Vote aqui para Melhores Gols (Masculino)">Melhores Gols (Masculino)</a>
+            <a class="cabecalho_menu_link" href="bestgoalsf.html"
+                title="Vote aqui para Melhores Gols (Feminino)">Melhores Gols (Feminino)</a>
+            <a class="cabecalho_menu_link" href="bestplayersm.html"
+                title="Vote aqui para Melhores Jogadores (Masculino)">Melhores Jogadores (Masculino)</a>
+            <a class="cabecalho_menu_link" href="bestplayersf.html"
+                title="Vote aqui para Melhores Jogadores (Feminino)">Melhores Jogadores (Feminino)</a>
+        </nav>
+    </header>
+
+    <br>
+
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="titulo_destaque">Historic Football Award!</h1>
+
+            <br>
+
+            <p class="apresentacao_conteudo_texto">
+                Bem-vindos! Aqui vamos realizar a votação de premiações históricas do futebol, sendo elas:
+            </p>
+
+            <br>
+
+            <ul class="OrderedList">
+                <li class="listbest">Melhores Jogadores (Categoria Masculina e Feminina)</li>
+                <br>
+                <li class="listbest">Melhores gols da história (Categoria Masculina e Feminina)</li>
+            </ul>
+
+            <Br>
+            <p class="apresentacao_conteudo_texto">
+                Instruções:
+            </p> <br>
+            <ul class="OrderedList">
+                <li class="listbest"> Insira seus dados no formulário abaixo e em seguida clique em enviar.</li>
+                <br>
+                <li class="listbest"> Após clicar em enviar você será redirecionado para a próxima página de votação, só
+                    pode haver um voto por categoria. </li>
+            </ul>
+
+
+            <div class="apresentacao__links">
+
+            </div>
+        </section>
+
+        <section class="container" id="formulario">
+            <h2 class="titulo_formulario">Insira seus dados abaixo</h2>
+
+            <form action="bestgoalsm.html" method="get" onsubmit="return validateForm()">
+                <p class="formulario-contato">
+                    <label class="texto_formulario" for="nome">Nome</label> <br>
+                    <input class="dados-formulario" type="text" id="nome" name="nome" placeholder="Insira seu Nome"
+                        required>
+                </p>
+
+                <p class="formulario-contato">
+                    <label class="texto_formulario" for="e-mail">E-Mail</label> <br>
+                    <input class="dados-formulario" type="email" id="e-mail" name="e-mail"
+                        placeholder="Insira seu E-mail" required>
+                </p>
+
+                <grid class="button-container">
+                    <p class="formulario-contato">
+                        <input class="indexb" id="enviar" type="submit" value="Enviar">
+                        <input class="indexb" id="limpar" type="reset" value="Limpar">
+                    </p>
+                </grid>
+            </form>
+        </section>
+    </main>
+
+
+
+    <script>
+        function validateForm() {
+            var nome = document.getElementById("nome").value;
+            var email = document.getElementById("e-mail").value;
+
+            if (nome.trim() === "" || email.trim() === "") {
+                alert("Por favor, preencha todos os campos.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+    <Br> <br> <Br>
+    <footer class="rodape">
+        <grid class="logos">
+            <h3>
+                <a href="https://fema.edu.br" target="_blank" title="Clique para ser redirecionado">
+                    <img class="logofema" src="assets/LogoFema.jpg" alt="logofema">
+                </a>
+            </h3>
+            <h4>
+                <a href="https://br.betano.com" target="_blank" title="Clique para ser redirecionado">
+                    <img class="logobetano" src="assets/Betano_logo.png" alt="logobetano">
+                </a>
+            </h4>
+        </grid>
+        <p>Todos os direitos reservados @2023 | WPMorais</p>
+    </footer>
+</body>
+
+</html>
