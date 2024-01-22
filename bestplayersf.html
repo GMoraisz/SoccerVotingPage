@@ -4,169 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/bestplayersF.css">
     <title>Historic Football Award</title>
 </head>
 
 <body class="background">
-    <header class="cabecalho">
-        <Br>
-        <nav class="cabecalho__menu">
-            <a class="cabecalho_menu_link" href="index.html" title="Página Inicial">Apresentação</a>
-            <a class="cabecalho_menu_link" href="bestgoalsm.html"
-                title="Vote aqui para Melhores Gols (Masculino)">Melhores Gols (Masculino)</a>
-            <a class="cabecalho_menu_link" href="bestgoalsf.html"
-                title="Vote aqui para Melhores Gols (Feminino)">Melhores Gols (Feminino)</a>
-            <a class="cabecalho_menu_link" href="bestplayersm.html"
-                title="Vote aqui para Melhores Jogadores (Masculino)">Melhores Jogadores (Masculino)</a>
-            <a class="cabecalho_menu_link" href="bestplayersf.html"
-                title="Vote aqui para Melhores Jogadores (Feminino)">Melhores Jogadores (Feminino)</a>
-        </nav>
-    </header>
-
+ 
 
     <section class="top10players">
         <form id="playerForm">
+            <div class="gridtoplayers">
 
-            <grid class="gridtoplayers">
-
-
-                <label>
-
-
-                    <p class="player-name"> Marta</p>
-                    <img class="Marta" src="assets/Top10Fem/MartaBrasil.jpg" alt="Marta">
-                    <input type="checkbox" name="jogador" value="Marta" onchange="onCheckboxChange(this)">
-
-                </label>
-
-                <label>
-
-                    <p class="player-name"> Alex Morgan </p>
-                    <img class="Morgan" src="assets/Top10Fem/AlexMorgan.jpg" alt="Alex Morgan">
-                    <input type="checkbox" name="jogador" value="Alex Morgan" onchange="onCheckboxChange(this)">
-
-                </label>
-
-                <label>
-
-                    <p class="player-name"> Alexia Putellas </p>
-                    <img class="Putellas" src="assets/Top10Fem/AlexaPutellas.jpg" alt="Alexia Putellas">
-                    <input type="checkbox" name="jogador" value="Alexia Putellas" onchange="onCheckboxChange(this)">
-
-                </label>
-
-                <label>
-
-                    <p class="player-name"> Carly Lloyd </p>
-                    <img class="Carly" src="assets/Top10Fem/CarlyLoud.jpg" alt="Carly Lloyd">
-                    <input type="checkbox" name="jogador" value="Carly Lloyd" onchange="onCheckboxChange(this)">
-
-                </label>
-
-                <label>
-
-                    <p class="player-name"> Mia Ham </p>
-                    <img class="Mia" src="assets/Top10Fem/MiaHam.jpg" alt="Mia Ham">
-                    <input type="checkbox" name="jogador" value="Mia Ham" onchange="onCheckboxChange(this)">
-
-                </label>
-
-                <label>
-
-                    <p class="player-name"> Megan Rapinoe </p>
-                    <img class="Rapinoe" src="assets/Top10Fem/MeganRapinoe.jpg" alt="Megan Rapinoe">
-                    <input type="checkbox" name="jogador" value="Megan Rapinoe" onchange="onCheckboxChange(this)">
-
-                </label>
-
-                <label>
-
-                    <p class="player-name"> Homare Sawa </p>
-                    <img class="Sawa" src="assets/Top10Fem/SawaHama.jpg" alt="Homare Sawa">
-                    <input type="checkbox" name="jogador" value="Homare Sawa" onchange="onCheckboxChange(this)">
-
-                </label>
-                <label>
-
-
-                    <p class="player-name"> Birgit Prinz</p>
-                    <img class="Birgit" src="assets/Top10Fem/Birgit.jpg" alt="Birgit Prinz">
-                    <input type="checkbox" name="jogador" value="Birgit Prinz" onchange="onCheckboxChange(this)">
-
-                </label>
-
-                <label>
-
-                    <p class="player-name"> Ada Hegerberg</p>
-                    <img class="Ada" src="assets/Top10Fem/AdaHeger.jpg" alt="Ada Hegerberg">
-                    <input type="checkbox" name="jogador" value="Ada Hegerberg" onchange="onCheckboxChange(this)">
-
-                </label>
-
-                <label>
-
-                    <p class="player-name"> Nadine Angerer </p>
-                    <img class="Nadine" src="assets/Top10Fem/Nadine.jpg" alt="Nadine Angerer">
-                    <input type="checkbox" name="jogador" value="Nadine Angerer " onchange="onCheckboxChange(this)">
-
-                </label>
-
-            </grid>
+                <div class="player-info">
+                    <label>
+                        <p class="player-name"> Marta</p>
+                        <img class="player-image" src="assets/Top10Fem/MartaBrasil.jpg" alt="Marta">
+                        <input type="checkbox" name="jogador" value="Marta" onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
+            
+                <div class="player-info">
+                    <label>
+                        <p class="player-name"> Alex Morgan </p>
+                        <img class="player-image" src="assets/Top10Fem/AlexMorgan.jpg" alt="Alex Morgan">
+                        <input type="checkbox" name="jogador" value="Alex Morgan" onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
+            
+                <div class="player-info">
+                    <label>
+                        <p class="player-name"> Alexia Putellas </p>
+                        <img class="player-image" src="assets/Top10Fem/AlexaPutellas.jpg" alt="Alexia Putellas">
+                        <input type="checkbox" name="jogador" value="Alexia Putellas" onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
+            
+                <div class="player-info">
+                    <label>
+                        <p class="player-name"> Carly Lloyd </p>
+                        <img class="player-image" src="assets/Top10Fem/CarlyLoud.jpg" alt="Carly Lloyd">
+                        <input type="checkbox" name="jogador" value="Carly Lloyd" onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
+            
+                <div class="player-info">
+                    <label>
+                        <p class="player-name"> Mia Ham </p>
+                        <img class="player-image" src="assets/Top10Fem/MiaHam.jpg" alt="Mia Ham">
+                        <input type="checkbox" name="jogador" value="Mia Ham" onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
+            
+                <div class="player-info">
+                    <label>
+                        <p class="player-name"> Megan Rapinoe </p>
+                        <img class="player-image" src="assets/Top10Fem/MeganRapinoe.jpg" alt="Megan Rapinoe">
+                        <input type="checkbox" name="jogador" value="Megan Rapinoe" onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
+            
+                <div class="player-info">
+                    <label>
+                        <p class="player-name"> Homare Sawa </p>
+                        <img class="player-image" src="assets/Top10Fem/SawaHama.jpg" alt="Homare Sawa">
+                        <input type="checkbox" name="jogador" value="Homare Sawa" onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
+            
+                <div class="player-info">
+                    <label>
+                        <p class="player-name"> Birgit Prinz</p>
+                        <img class="player-image" src="assets/Top10Fem/Birgit.jpg" alt="Birgit Prinz">
+                        <input type="checkbox" name="jogador" value="Birgit Prinz" onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
+            
+                <div class="player-info">
+                    <label>
+                        <p class="player-name"> Ada Hegerberg</p>
+                        <img class="player-image" src="assets/Top10Fem/AdaHeger.jpg" alt="Ada Hegerberg">
+                        <input type="checkbox" name="jogador" value="Ada Hegerberg" onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
+            
+                <div class="player-info">
+                    <label>
+                        <p class="player-name"> Nadine Angerer </p>
+                        <img class="player-image" src="assets/Top10Fem/Nadine.jpg" alt="Nadine Angerer">
+                        <input type="checkbox" name="jogador" value="Nadine Angerer " onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
+            
+            </div>
 
             <input class="buttonBestPlayers" type="button" value="Enviar" onclick="submitForm()">
         </form>
     </section>
-    <script>
-        function onCheckboxChange(checkbox) {
-            var checkboxes = document.getElementsByName('jogador');
-
-            checkboxes.forEach(function (otherCheckbox) {
-                if (otherCheckbox !== checkbox) {
-                    otherCheckbox.checked = false;
-                }
-            });
-        }
-
-        function submitForm() {
-            var checkboxes = document.getElementsByName('jogador');
-            var selectedPlayers = [];
-
-            checkboxes.forEach(function (checkbox) {
-                if (checkbox.checked) {
-                    selectedPlayers.push(checkbox.value);
-                }
-            });
-
-            if (selectedPlayers.length > 0) {
 
 
-                var nextPage = "https://www.google.com/search?q=o+fim+escrito+em+varias+linguas&tbm=isch&ved=2ahUKEwj7k-j087-CAxUDpZUCHfkuHY4Q2-cCegQIABAA&oq=o+fim+escrito+em+varias+linguas&gs_lcp=CgNpbWcQAzoECCMQJzoHCAAQigUQQzoFCAAQgAQ6CAgAEIAEELEDOggIABCxAxCDAToKCAAQigUQsQMQQzoECAAQAzoECAAQHjoHCCMQ6gIQJzoICAAQgAQQxwM6BggAEAgQHjoJCAAQCBAeEMcDUPYCWPMzYNg0aARwAHgAgAF7iAG6IpIBBDYuMzWYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABCsABAQ&sclient=img&ei=w4ZRZbumNIPK1sQP-d308Ag&bih=715&biw=1495&client=opera-gx&hs=uoQ#imgrc=3cNR4uP_DZ1jQM";
-
-
-                window.open(nextPage, '_blank');
-            } else {
-                alert("Selecione um Jogador!");
-            }
-        }
-    </script>
-
-
-    <footer class="rodape">
-        <grid class="logos">
+    <footer>
+        <div class="logos">
             <h3>
                 <a href="https://fema.edu.br" target="_blank" title="Clique para ser redirecionado">
-                    <img class="logofema" src="assets/LogoFema.jpg" alt="logofema">
+                    <img class="logofema" src="assets/layout/LogoFema-removebg-preview.png" alt="logofema">
+                </a>
+                <a href="https://br.betano.com" target="_blank" title="Clique para ser redirecionado">
+                    <img class="logobetano" src="assets/layout/Betano_logo-removebg-preview.png" alt="logobetano">
                 </a>
             </h3>
-            <h4>
-                <a href="https://br.betano.com" target="_blank" title="Clique para ser redirecionado">
-                    <img class="logobetano" src="assets/Betano_logo.png" alt="logobetano">
-                </a>
-            </h4>
-        </grid>
+
+        </div>
         <p>Todos os direitos reservados @2023 | WPMorais</p>
     </footer>
+
+    <script  defer src="scripts/Buttons.js"></script>
 </body>
 
 </html>

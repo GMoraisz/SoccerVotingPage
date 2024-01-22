@@ -4,121 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/bestgoalsM.css">
     <title>Historic Football Award</title>
 </head>
 
 <body class="background">
-    <header class="cabecalho">
-        <Br>
-        <nav class="cabecalho__menu">
-            <a class="cabecalho_menu_link" href="index.html" title="Página Inicial">Apresentação</a>
-            <a class="cabecalho_menu_link" href="bestgoalsm.html"
-                title="Vote aqui para Melhores Gols (Masculino)">Melhores Gols (Masculino)</a>
-            <a class="cabecalho_menu_link" href="bestgoalsf.html"
-                title="Vote aqui para Melhores Gols (Feminino)">Melhores Gols (Feminino)</a>
-            <a class="cabecalho_menu_link" href="bestplayersm.html"
-                title="Vote aqui para Melhores Jogadores (Masculino)">Melhores Jogadores (Masculino)</a>
-            <a class="cabecalho_menu_link" href="bestplayersf.html"
-                title="Vote aqui para Melhores Jogadores (Feminino)">Melhores Jogadores (Feminino)</a>
-        </nav>
-    </header>
 
     <section class="top10goals">
         <form id="playerForm">
-            <grid class="gridtopgoals">
+            <div class="gridtopgoals">
 
-                <label>
-                    <input type="checkbox" name="jogador" value="Messi vs Getafe" onchange="onCheckboxChange(this)">
-                </label>
+                <div class="goal-item">
+                    <label>
+                        <input type="checkbox" name="jogador" value="Messi vs Getafe" onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
 
-                <label>
-                    <input type="checkbox" name="jogador" value="Cristiano Ronaldo vs Porto" onchange="onCheckboxChange(this)">
-                </label>
+                <div class="goal-item">
+                    <label>
+                        <input type="checkbox" name="jogador" value="Cristiano Ronaldo vs Porto"
+                            onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
 
-                <label>
-                    <input type="checkbox" name="jogador" value="Pele World Cup" onchange="onCheckboxChange(this)">
-                </label>
+                <div class="goal-item">
+                    <label>
+                        <input type="checkbox" name="jogador" value="Pele World Cup" onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
 
-                <label>
-                    <input type="checkbox" name="jogador" value="Ozil vs Ludogorets" onchange="onCheckboxChange(this)">
-                </label>
+                <div class="goal-item">
+                    <label>
+                        <input type="checkbox" name="jogador" value="Ozil vs Ludogorets"
+                            onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
 
-                <label>
-                    <input type="checkbox" name="jogador" value="Mohd Faiz Falta" onchange="onCheckboxChange(this)">
-                </label>
+                <div class="goal-item">
+                    <label>
+                        <input type="checkbox" name="jogador" value="Mohd Faiz Falta" onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
 
-                <label>
-                    <input type="checkbox" name="jogador" value="Neymar vs Flamengo" onchange="onCheckboxChange(this)">
-                </label>
+                <div class="goal-item">
+                    <label>
+                        <input type="checkbox" name="jogador" value="Neymar vs Flamengo"
+                            onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
 
-                <label>
-                    <input type="checkbox" name="jogador" value="Richarlison vs Sérvia" onchange="onCheckboxChange(this)">
-                </label>
+                <div class="goal-item">
+                    <label>
+                        <input type="checkbox" name="jogador" value="Richarlison vs Sérvia"
+                            onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
 
-                <label>
-                    <input type="checkbox" name="jogador" value="Van Persie vs Espanha" onchange="onCheckboxChange(this)">
-                </label>
+                <div class="goal-item">
+                    <label>
+                        <input type="checkbox" name="jogador" value="Van Persie vs Espanha"
+                            onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
 
-                <label>
-                    <input type="checkbox" name="jogador" value="Ibrahimovic vs Inglaterra" onchange="onCheckboxChange(this)">
-                </label>
+                <div class="goal-item">
+                    <label>
+                        <input type="checkbox" name="jogador" value="Ibrahimovic vs Inglaterra"
+                            onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
 
-                <label>
-                    <input type="checkbox" name="jogador" value="Roberto Carlos vs França" onchange="onCheckboxChange(this)">
-                </label>
+                <div class="goal-item">
+                    <label>
+                        <input type="checkbox" name="jogador" value="Roberto Carlos vs França"
+                            onchange="onCheckboxChange(this)">
+                    </label>
+                </div>
 
-            </grid>
+            </div>
 
             <input class="buttonBestPlayers" type="button" value="Enviar" onclick="submitForm()">
         </form>
     </section>
 
-    <script>
-        function onCheckboxChange(checkbox) {
-            var checkboxes = document.getElementsByName('jogador');
-
-            checkboxes.forEach(function (otherCheckbox) {
-                if (otherCheckbox !== checkbox) {
-                    otherCheckbox.checked = false;
-                }
-            });
-        }
-
-        function submitForm() {
-            var checkboxes = document.getElementsByName('jogador');
-            var selectedPlayers = [];
-
-            checkboxes.forEach(function (checkbox) {
-                if (checkbox.checked) {
-                    selectedPlayers.push(checkbox.value);
-                }
-            });
-
-            if (selectedPlayers.length > 0) {
-                var nextPage = "bestgoalsf.html";
-                window.location.href = nextPage;
-            } else {
-                alert("Selecione um Gol!");
-            }
-        }
-    </script>
-
-    <footer class="rodape">
-        <grid class="logos">
+    
+    <footer>
+        <div class="logos">
             <h3>
                 <a href="https://fema.edu.br" target="_blank" title="Clique para ser redirecionado">
-                    <img class="logofema" src="assets/LogoFema.jpg" alt="logofema">
+                    <img class="logofema" src="assets/layout/LogoFema-removebg-preview.png" alt="logofema">
+                </a>
+                <a href="https://br.betano.com" target="_blank" title="Clique para ser redirecionado">
+                    <img class="logobetano" src="assets/layout/Betano_logo-removebg-preview.png" alt="logobetano">
                 </a>
             </h3>
-            <h4>
-                <a href="https://br.betano.com" target="_blank" title="Clique para ser redirecionado">
-                    <img class="logobetano" src="assets/Betano_logo.png" alt="logobetano">
-                </a>
-            </h4>
-        </grid>
+
+        </div>
         <p>Todos os direitos reservados @2023 | WPMorais</p>
     </footer>
+
+    <script  defer src="scripts/Buttons.js"></script>
 </body>
 
 </html>

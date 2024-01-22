@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    background-color: #f4f4f4;
+}
+
+.cabecalho {
+    grid-column: span 3;
+    background-color: #333;
+    padding: 8px;
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cabecalho_menu_link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top10players {
+    grid-column: span 2;
+    margin-left: 0; /* Adicionando esta linha para ajustar a margem esquerda */
+}
+
+.gridtoplayers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 0; /* Removendo a margem para que a grade fique colada no canto esquerdo */
+}
+
+.player-info img {
+    width: 100%;
+    height: 320px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    object-fit: cover;
+}
+
+
+.player-info {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px; 
+}
+
+.player-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.buttonBestPlayers {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+    grid-column: span 3; 
+    margin: 20px auto; 
+}
+
+.rodape {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.logofema,
+.logobetano {
+    width: 100%;
+    max-width: 150px; 
+}
+
+.logobetano {
+    justify-self: end;
+}
