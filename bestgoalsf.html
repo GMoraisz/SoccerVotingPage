@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/bestgoalsF.css">
     <title>Historic Football Award</title>
+    <script defer src="scripts/Buttons.js"></script>
 </head>
 
 <body class="background">
-
+    <header>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+        </nav>
+    </header>
 
     <section class="top10goals">
         <form id="playerForm">
@@ -107,29 +112,20 @@
                     <input type="checkbox" name="jogador" value="Roberto Carlos vs França"
                         onchange="onCheckboxChange(this)">
                 </label>
-                <!-- Fim dos gols já existentes -->
+               
             </div>
 
             <input class="buttonBestPlayers" type="button" value="Enviar" onclick="submitForm()">
         </form>
     </section>
-
     <footer>
-        <div class="logos">
-            <h3>
-                <a href="https://fema.edu.br" target="_blank" title="Clique para ser redirecionado">
-                    <img class="logofema" src="assets/layout/LogoFema-removebg-preview.png" alt="logofema">
-                </a>
-                <a href="https://br.betano.com" target="_blank" title="Clique para ser redirecionado">
-                    <img class="logobetano" src="assets/layout/Betano_logo-removebg-preview.png" alt="logobetano">
-                </a>
-            </h3>
-
-        </div>
-        <p>Todos os direitos reservados @2023 | WPMorais</p>
+      
+     
+        <h3>Todos os direitos reservados @2023 | WPMorais</h3>
     </footer>
 
-    <script  defer src="scripts/Buttons.js"></script>
+
+    
 </body>
 
 </html>

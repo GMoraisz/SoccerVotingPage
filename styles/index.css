@@ -1,40 +1,60 @@
 body {
     font-family: 'Arial', sans-serif;
-    color: #000;
-    background-color: #fff;
+    color: #ffffff; 
     margin: 0;
     font-size: 16px;
+    background-image: url('../assets/pxfuel.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+header {
+   
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+nav {
+    text-align: right;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #ffc107;
+    text-shadow: 1px 1px 1px #000; 
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 80%;
+    margin: 40px auto 0;
 }
 
-.apresentacao_conteudo,
-.instrucoes {
-    padding: 20px;
+.apresentacao {
+    margin-top: 20px;
 }
 
-.titulo_destaque,
-.titulo-formulario {
-    font-size: 2.5em;
-    color: #000;
+.titulo_destaque {
+    font-size: 3.5rem;
+    color: #ffc107; 
     margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000; 
+}
+.titulo-formulario {
+    font-size: 2em;
+    color: #ffc107; 
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000; 
 }
 
 .apresentacao_conteudo_texto {
-
     font-size: 2.5rem;
-}
-.instrucoes_texto,
-.formulario-texto {
-    font-size: 2em;
-    
+    text-shadow: 1.5px 1.5px 1.5px #000; 
 }
 
 .ordered-list {
@@ -42,6 +62,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-shadow: 1.5px 1.5px 1.5px #000; 
 }
 
 .list-best {
@@ -49,8 +70,12 @@ body {
 }
 
 .formulario {
-    background-color: #fff;
+    margin-top: 2rem;
+    background-color: #2a282899;
     padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: solid black;
 }
 
 .formulario-contato {
@@ -59,9 +84,9 @@ body {
 }
 
 .formulario-texto {
-   
     font-size: 2rem;
-    color: #000;
+    color: #ffffff;
+    text-shadow: 1.5px 1.5px 1.5px #000; 
     margin: 0;
 }
 
@@ -73,34 +98,20 @@ body {
     font-size: 1.5rem;
 }
 
-
 .formulario-botao {
     padding: 10px 30px;
-    background-color: #000;
-    color: #fff;
+    background-color: #ffc107; 
+    color: #000;
     border: none;
     cursor: pointer;
     border-radius: 16px;
     font-size: 1rem;
-    
 }
 
 footer {
-    background-color: #000;
     color: #fff;
     padding: 20px;
     text-align: center;
-}
+    text-shadow: 1.5px 1.5px 1.5px #000; 
 
-.logofema,
-.logobetano {
-    width: 100px;
-    height: auto;
-    margin: 0 10px;
 }
-
-.logofema:hover,
-.logobetano:hover {
-    opacity: 0.8;
-}
-

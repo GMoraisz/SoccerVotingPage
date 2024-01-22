@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
     <title>Historic Football Award</title>
+    <script defer src="scripts/Buttons.js"></script>
 </head>
 
 <body>
+   
+    <header>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+        </nav>
+    </header>
 
     <div class="container">
+
+        
         <section class="apresentacao">
             <div class="apresentacao_conteudo">
                 <h1 class="titulo_destaque">Historic Football Award!</h1>
@@ -25,7 +34,7 @@
 
             <div class="instrucoes">
                <ul class="ordered-list">
-                    <h2> Instruções </h2>
+                    <h2 class="titulo_destaque"> Instruções </h2>
                     <li class="list-best">Insira seus dados no formulário abaixo e em seguida clique em enviar.</li>
                     <li class="list-best">Após clicar em enviar você será redirecionado para a próxima página de votação, só pode haver um voto por categoria.</li>
                 </ul>
@@ -35,7 +44,7 @@
         <section class="formulario" id="formulario">
             <h2 class="titulo-formulario">Insira seus dados abaixo</h2>
 
-            <form action="bestgoalsm.html" method="get" onsubmit="return validateForm()">
+            <form action="bestplayersm.html" method="get" onsubmit="return validateForm()">
                 <div class="formulario-contato">
                     <label class="formulario-texto" for="nome">Nome</label>
                     <input class="formulario-input" type="text" id="nome" name="nome" placeholder="Insira seu Nome" required>
@@ -57,16 +66,12 @@
     </div>
 
     <footer>
-        <a href="https://fema.edu.br" target="_blank" title="Clique para ser redirecionado">
-            <img class="logofema" src="assets/layout/LogoFema-removebg-preview.png" alt="logofema">
-        </a>
-        <a href="https://br.betano.com" target="_blank" title="Clique para ser redirecionado">
-            <img class="logobetano" src="assets/layout/Betano_logo-removebg-preview.png" alt="logobetano">
-        </a>
+      
+
         <h3>Todos os direitos reservados @2023 | WPMorais</h3>
     </footer>
 
-    <script defer src="scripts/Buttons.js"></script>
+  
 </body>
 
 </html>

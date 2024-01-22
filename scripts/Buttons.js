@@ -1,55 +1,43 @@
+document.addEventListener("DOMContentLoaded", function () {
+    var form = document.getElementById("formulario");
 
-var formModule = (function () {
-    function validateForm() {
-        var nome = document.getElementById("nome").value;
-        var email = document.getElementById("e-mail").value;
+    if (form) {
+        form.addEventListener("submit", function () {
+            var isFormValid = formModule.validateForm();
 
-        if (nome.trim() === "" || email.trim() === "") {
-            alert("Por favor, preencha todos os campos.");
-            return false;
-        }
-
-        return true;
-    }
-
- 
-    return {
-        validateForm: validateForm
-    };
-})();
-
-
-var checkboxModule = (function () {
-    function onCheckboxChange(checkbox) {
-        var checkboxes = document.getElementsByName('jogador');
-        checkboxes.forEach(function (otherCheckbox) {
-            if (otherCheckbox !== checkbox) {
-                otherCheckbox.checked = false;
+            if (isFormValid) {
+                window.location.href = "bestplayersm.html";  
+            } else {
+                alert("Por favor, preencha todos os campos.");
             }
         });
     }
+});
 
-    function submitForm() {
-        var checkboxes = document.getElementsByName('jogador');
-        var selectedPlayers = [];
+function submitForm() {
+    var checkboxes = document.getElementsByName('jogador');
+    var selectedPlayers = [];
 
-        checkboxes.forEach(function (checkbox) {
-            if (checkbox.checked) {
-                selectedPlayers.push(checkbox.value);
-            }
-        });
-
-        if (selectedPlayers.length > 0) {
-            var nextPage = "bestplayersf.html";
-            window.location.href = nextPage;
-        } else {
-            alert("Selecione um Jogador!");
+    checkboxes.forEach(function (checkbox) {
+        if (checkbox.checked) {
+            selectedPlayers.push(checkbox.value);
         }
+    });
+
+    if (selectedPlayers.length > 0) {
+        var nextPage = "bestplayersf.html";
+        window.location.href = nextPage;
+    } else {
+        alert("Selecione um Jogador!");
     }
+}
 
-
-    return {
-        onCheckboxChange: onCheckboxChange,
-        submitForm: submitForm
-    };
-})();
+function submitFormF() {
+    var checkboxes = document.querySelectorAll('input[name="jogador"]:checked');
+    
+    if (checkboxes.length > 0) {
+        window.location.href = "bestgoalsf.html";
+    } else {
+        alert("Selecione pelo menos uma jogadora antes de enviar!");
+    }
+}
