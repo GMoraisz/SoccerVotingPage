@@ -1,37 +1,16 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .background {
     background-color: #00000028;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
-.cabecalho {
-    grid-column: span 3;
-    background-color: #333;
-    padding: 8px;
-}
 
-.cabecalho__menu {
-    display: flex;
-    justify-content: space-around;
-}
 
-.cabecalho_menu_link {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
 
 .top10players {
     grid-column: span 2;

@@ -1,7 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+.background {
+    background-color: #00000028;
+}
+
+
+
+.gridtopgoals {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.goal-item {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.player-video {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.player-name {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 0.75px 0.75px 0.75px #ffc107;
+}
+
+
+
+.buttonBestGoals {
+    padding: 10px 30px;
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+
+}
+
+input[type="checkbox"] {
+    margin-left: 0.5rem;
+    transform: scale(1.5);
+}
+
+.top10goals {
+    grid-column: span 2;
+}
+
+
 header {
-  
+
     padding: 10px;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     width: 100%;
@@ -17,7 +84,7 @@ nav {
     padding: 8px 15px;
     border-radius: 5px;
     background-color: #ffc107;
-    text-shadow: 1px 1px 1px #000; 
+    text-shadow: 1px 1px 1px #000;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -25,7 +92,7 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    text-shadow: 1.5px 1.5px 1.5px #000; 
+    text-shadow: 1.5px 1.5px 1.5px #000;
     background-color: #000;
 
 }

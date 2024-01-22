@@ -3,9 +3,10 @@ body {
     color: #ffffff; 
     margin: 0;
     font-size: 16px;
-    background-image: url('../assets/pxfuel.jpg'); 
+    background-image: url('../assets/Walpappers/pxfuel.jpg'); 
     background-size: cover; 
     background-position: center; 
+    scroll-behavior: smooth;
 }
 
 header {
