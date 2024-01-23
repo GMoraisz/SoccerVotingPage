@@ -12,4 +12,5 @@ Esse repositório contém essas tais tecnologias :
 
 ## 🖼️ Tela Inicial :
 
-## ![image](https://github.com/GMoraisz/SoccerVotingPage/assets/136760261/1beb33e9-7ef1-4963-a4f6-6d66775a59a8)
+## ![image](https://github.com/GMoraisz/SoccerVotingPage/assets/136760261/5cd5cd73-2068-4d4b-b95c-dc73ec5894e7)
+
